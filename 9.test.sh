@@ -9,6 +9,7 @@
 -lt	小于则为真
 -le	小于等于则为真
 !
+echo "begin test number ..."
 num1=100
 num2=100
 if test $[num1] -eq $[num2]
@@ -17,6 +18,13 @@ then
 else
     echo '两个数不相等！'
 fi
+echo "end test number ..."
+
+if test num1 = num2; then 
+echo "equal"
+else 
+echo "inequal"
+fi 
 
 a=5
 b=6
