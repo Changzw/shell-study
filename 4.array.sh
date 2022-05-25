@@ -17,15 +17,15 @@ done
 echo $total
 
 :<<!
-数组个数 ${!lprojs[@]}
+数组个数 ${!lprojs[*]}
 !
 lprojs=('ar' 'zh-Hans' 'en')
 requestLangs=('阿拉' '中文' '阿拉') #英文的strings文件也填入阿语翻译
 
-echo ${lprojs[@]}
-echo ${!lprojs[@]} # 所有index 数组
+echo ${lprojs[*]}
+echo ${!lprojs[*]} # 所有index 数组
 
-for i in "${!lprojs[@]}";
+for i in "${!lprojs[*]}";
 do
 	echo $i
 	echo ${lprojs[i]}
